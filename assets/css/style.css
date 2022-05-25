@@ -6,6 +6,8 @@ h1{
 }
 
 #top-logo {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 300%;
 }
@@ -37,4 +39,9 @@ h1{
     to{
         transform: scale(1.3);
     }
+}
+
+#music-vid{
+    display:flex;
+    justify-content: center;
 }
