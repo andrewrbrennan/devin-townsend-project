@@ -63,12 +63,6 @@ h2{
 }
 
 
-#menu > ul{
-    display:flex;
-    justify-content: s;
- 
-}
-
 
   
 
@@ -305,7 +299,7 @@ tbody{
 
 .form-section {
     clear: left;
-    background: url("../images/signupbg.webp");
+    background: url(/workspace/devin-townsend-project/assets/images/signupbg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,7 +311,6 @@ tbody{
     color:#fff;
     background-color:rgba(60, 60, 60, 0.6);
     max-width:650px;
-   
     position: absolute;
     left: 25%;
     padding: 30px;
