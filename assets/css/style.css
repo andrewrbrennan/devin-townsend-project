@@ -11,6 +11,11 @@ h1{
     font-weight: 600;
 }
 
+h2{
+    font-weight:600;
+    text-align: center;
+}
+
 #top-logo {
     display: flex;
     justify-content: end;
@@ -87,6 +92,16 @@ h1{
     justify-content: center;
 }
 
+@media only screen and (max-width: 450px) {
+    #music-vid{
+        display:flex;
+        justify-content: center;
+        max-width: 425px;
+    }
+
+}
+
+
 /* for artist bio page responsiveness */ 
 .artist-pic{
     max-width: 100%;
@@ -151,6 +166,10 @@ tbody{
     margin-right: 10%; 
 }
 
+#tour{
+    padding: 30px;
+}
+
 /* flipcard code taken from w3schools https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
 .flip-card {
@@ -198,12 +217,24 @@ tbody{
     margin: 2px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 
 /*---------------- footer section ------------*/
 
 .footer-social-buttons a{
     color: #7C0D0E;
     vertical-align: middle;
+}
+
+.footer-css{
+    background-color: #000000;
+    justify-content: center;
 }
 /* code take from w3 schools website  https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa {
@@ -217,18 +248,4 @@ tbody{
   /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
   }
