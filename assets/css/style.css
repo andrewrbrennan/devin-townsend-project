@@ -12,6 +12,14 @@ h1{
     font-size: 300%;
 }
 
+
+
+#menu > ul{
+    display:flex;
+    justify-content: s;
+ 
+}
+
 /* hero image */
 
 #hero-bar {
