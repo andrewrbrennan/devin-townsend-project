@@ -4,6 +4,9 @@ body {
     background-color: black;
     color: #f2f2f2;
     font-family:'Montserrat', sans-serif;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
 }
  
 h1{
@@ -17,11 +20,20 @@ h2{
 }
 
 #top-logo {
+    color: #7C0D0E;
     display: flex;
     justify-content: end;
     text-align: right;
     font-size: 300%;
+    
 }
+
+@media screen and (max-width: 750px) {
+    #top-logo{
+        display:none;
+    }
+}
+
 
 /* navigation bar code taken in snippets from w3swchools https://www.w3schools.com/howto/howto_js_topnav.asp */
 .topnav{
@@ -35,7 +47,7 @@ h2{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* Change color of links on hover */
@@ -57,6 +69,9 @@ h2{
  
 }
 
+
+  
+
 /* hero image */
 
 #hero-bar {
@@ -76,6 +91,33 @@ h2{
     animation-name: img-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+    #hero-image{
+        height:700px;
+        width: 100%;
+        background: url('../images/devbarmobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        animation-name: img-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #hero-image{
+        height:500px;
+        width: 100%;
+        background: url('../images/devbarmobilesmall.jpg');
+        background-repeat: no-repeat;
+
+        animation-name: img-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes img-zoom {
@@ -106,7 +148,7 @@ h2{
 .artist-pic{
     max-width: 100%;
     max-height: 100%;
-    outline: solid 1px #7C0D0E;
+
     width: auto;
     margin-top: auto;
 }
@@ -212,7 +254,7 @@ tbody{
 }
 
 .spotify-link a{
-    font-size: 40px;
+    font-size: 75px;
     color:  #1DB954;
     margin: 2px;
 }
@@ -235,13 +277,15 @@ tbody{
 .footer-css{
     background-color: #000000;
     justify-content: center;
+    min-height: 100px;
 }
 /* code take from w3 schools website  https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
-    text-align: center;
+    /*text-align: center;*/
+    justify-content: center;
     text-decoration: none;
   }
   
@@ -249,3 +293,67 @@ tbody{
   .fa:hover {
     opacity: 0.7;
   }
+
+#copyright{
+
+    text-align: center;
+}
+
+/*----- Signup Form ---------*/
+
+/* Form */
+
+.form-section {
+    clear: left;
+    background: url("../images/signupbg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+.signup-form {
+    margin:150px 10% 0 0;
+    color:#fff;
+    background-color:rgba(60, 60, 60, 0.6);
+    max-width:650px;
+   
+    position: absolute;
+    left: 25%;
+    padding: 30px;
+}
+
+.signup-form > h2 {
+    color:#fafafa;
+    margin-bottom:20px;
+}
+
+.text-input {
+    background:transparent;
+    color:#fafafa;
+    width:100%;
+    height:25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius:2px;
+}
+
+.text-input:hover {
+    border-color:#f16c6b;
+}
+
+.join-button {
+    margin-top:20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align:center;
+    font-size:100%;
+    background-color:#f16c6b;
+    color:#fafafa;
+    display:block;
+}
+
+.join-button:hover {
+    background-color:#fafafa;
+    color:#f16c6b;
+}
