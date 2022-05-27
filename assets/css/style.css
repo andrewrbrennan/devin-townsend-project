@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@600&family=Oswald&display=swap');
 
+*{
+    outline: solid 1px red;
+}
+
 body {
     background-color: black;
     color: #f2f2f2;
     font-family:'Montserrat', sans-serif;
     min-height: 400px;
     margin-bottom: 100px;
-    clear: both;
 }
  
 h1{
@@ -28,7 +31,7 @@ h2{
     
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
     #top-logo{
         display:none;
     }
@@ -62,7 +65,11 @@ h2{
     color: white;
 }
 
-
+@media screen and (max-width: 380px) {
+    .topnav a{
+        font-size: 12px
+    }
+}
 
   
 
@@ -123,19 +130,37 @@ h2{
     }
 }
 
-#music-vid{
+.iframe-container{
     display:flex;
     justify-content: center;
 }
 
 @media only screen and (max-width: 450px) {
-    #music-vid{
+    .iframe-container{
         display:flex;
         justify-content: center;
         max-width: 425px;
     }
 
 }
+
+/* iframe container code taken from  https://www.youtube.com/watch?v=9YffrCViTVk&ab_channel=tipswithpunch */
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+
+  .iframe-container iframe{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 /* for artist bio page responsiveness */ 
@@ -168,6 +193,13 @@ h2{
 
 /* main page content */
 
+.page-content{
+    width: 100%;
+}
+
+.container-fluid{
+    padding: 0;
+}
 
 .tour-dates{
 
@@ -176,22 +208,20 @@ h2{
 
 }
 
-.table-dark{
-    background-color: transparent;
-}
 
-.thead{
-    color: #ddd;
-
+/* took this fix for the header colour not changing from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th */
+th[scope="col"]{
+    color: #f2f2f2; 
+    text-align: center;
 }
 
 tbody{
     color: #ddd;
+    text-align: center;
 }
 
 .tour-news{
     width: 100%;
-
 }
 
 #tour{
