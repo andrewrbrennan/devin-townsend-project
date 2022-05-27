@@ -78,6 +78,13 @@ h2{
     }
 }
 
+@media screen and (max-width: 350px) {
+    .topnav a{
+        font-size: 10px
+    }
+}
+
+
   
 
 /* hero image */
