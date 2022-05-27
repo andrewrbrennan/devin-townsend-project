@@ -4,6 +4,13 @@
     outline: solid 1px red;
 }
 
+@media only screen and (min-width:0px) and (max-width:350px){
+    .border{
+      border: 0 solid !important
+    }
+  }
+
+
 body {
     background-color: black;
     color: #f2f2f2;
@@ -197,8 +204,9 @@ h2{
     width: 100%;
 }
 
-.container-fluid{
-    padding: 0;
+.no-margin {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .tour-dates{
@@ -213,6 +221,13 @@ h2{
 th[scope="col"]{
     color: #f2f2f2; 
     text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+.table{
+    font-size: 12px;
+}
+
 }
 
 tbody{
@@ -270,17 +285,11 @@ tbody{
 }
 
 .spotify-link a{
-    font-size: 75px;
+    font-size: 100px;
     color:  #1DB954;
     margin: 2px;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
 
 /*---------------- footer section ------------*/
