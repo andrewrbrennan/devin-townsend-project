@@ -168,15 +168,9 @@ h2{
 
 /* main page content */
 
-.content-container{
-    display: flex;
-    
-    max-height: 600px;
-}
 
 .tour-dates{
-    margin-left: 10%;
-    width: 35%;
+
     text-align: center;
     color: #ddd;
 
@@ -196,10 +190,8 @@ tbody{
 }
 
 .tour-news{
-    width: 35%;
-    padding: 30px;
-    height: auto;
-    margin-right: 10%; 
+    width: 100%;
+
 }
 
 #tour{
