@@ -22,10 +22,10 @@
             <div class="bg-img">
                 <div class="container">
                     <div class="topnav">
-                        <a href="index.html" class="active">Home</a>
+                        <a href="index.html" >Home</a>
                         <a href="music.html">Music</a>
                         <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html" class="active">Contact</a>
                         <div id="top-logo">
                             <a href="index.html">DEVIN_TOWNSEND</a>
                         </div>
@@ -35,8 +35,8 @@
             
     </header>
 
-<section class="form-section">
-    <form method="POST" action="index.html" class="signup-form" action="/action_page.php" onsubmit="myFunction()">
+<div class="form-section">
+    <form method="GET" action="index.html" class="signup-form" action="/action_page.php" onsubmit="myFunction()">
 
 
     <h2>Sign up to be notifed of upcoming tours!</h2>
@@ -51,11 +51,11 @@
 
             <input type="submit" value="Submit">
       </form>
-</section>
+    </div>
 <footer>
     <div class="container-fluid fixed-bottom footer-css">
         <div class="row">
-            <div class=" col-12">
+            <div>
                 <ul class="list-inline footer-social-buttons">
                     <li class="fa">
                         <a href="https://www.instagram.com/dvntownsend" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -88,7 +88,7 @@
 <!--  *script gotten from w3schools -->
 <script>
     function myFunction() {
-      alert("The form was submitted");
+      alert("Thank you for Signing up to the newsletter! You will now return to the homepage.");
     }
     </script>
 </body>
